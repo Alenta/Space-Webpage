@@ -4,7 +4,7 @@
 }
 .navbar{
     background-color: black;
-    max-height: 80px;
+    height: 80px;
     width: 100%;
 }
 .parallax {
@@ -39,6 +39,7 @@
 
 }
 .element h1, .element p{
+    
     margin-left: 5%;
     max-width: 30%;
 }
