@@ -2,11 +2,45 @@
     margin: 0;
     
 }
-.navbar{
+
+
+#navbar { 
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-30%); /* normal, hidden state */
+    align-items: center;
     background-color: black;
-    height: 80px;
+    height: 60px;
     width: 100%;
+    background-color: rgba(7, 3, 16, 0);
+    transition: ease-in;
+    transition-duration: 250ms;
 }
+
+.navcontainer:hover #navbar {
+    transform: translateY(0); /* when parent is hovered */
+    background-color: rgb(7, 3, 16);
+}
+
+.flexend{
+    display: flex;
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+#links{
+    display: none;
+    font-family: "Helvetica";
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
 .parallax {
   background-image: url(/galaxy.jpg);
 
@@ -17,6 +51,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .parallax2 {
   background-image: url(/venus.jpg);
@@ -34,14 +69,18 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
-    background-color: rgba(255, 228, 196, 0.389);
+    background-color: rgb(255, 228, 196);
     min-height: 300px;
 
 }
 .element h1, .element p{
-    
     margin-left: 5%;
     max-width: 30%;
+}
+
+.element h1{
+    transform: translateZ(10);
+
 }
 
 .element2{
@@ -62,4 +101,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
+}
+
+#logo{
+    font-family: "Orbitron", serif;
+    color: white;
+    margin-left: 1rem;
 }
