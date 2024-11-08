@@ -3,6 +3,13 @@
     
 }
 
+h1{
+    font-family: "Orbitron";
+}
+
+p{
+    font-family: "Helvetica";
+}
 
 #navbar { 
     position: fixed;
@@ -40,12 +47,9 @@
     gap: 1rem;
     margin-right: 1rem;
 }
-
 .parallax {
-  background-image: url(/galaxy.jpg);
-
+  background-image: url(./galaxy.jpg);
   min-height: 500px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,10 +58,8 @@
 
 
 .parallax2 {
-  background-image: url(/venus.jpg);
-
+  background-image: url(./venus.jpg);
   min-height: 500px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,25 +67,24 @@
 }
 
 
-.element, .element2{
+.element{
     display: flex;
     justify-content: left;
     flex-direction: column;
-    background-color: rgb(255, 228, 196);
+    background-color: rgba(255, 228, 196, 0.389);
     min-height: 300px;
 
 }
 .element h1, .element p{
-    margin-left: 5%;
-    max-width: 30%;
+
+    margin-inline: auto;
+    max-width: 60%;
+}
+h1{
+    margin-bottom: 2rem;
 }
 
-.element h1{
-    transform: translateZ(10);
-
-}
-
-.element2{
+.element{
     align-items: flex-start;
     flex-direction: column;
     background-color: rgba(196, 217, 255, 0.389);
@@ -102,8 +103,8 @@
     flex-direction: column;
     align-items: flex-end; 
 }
-
 #logo{
+    margin-top:2rem;
     font-family: "Orbitron", serif;
     color: white;
     margin-left: 1rem;
