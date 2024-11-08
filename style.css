@@ -1,14 +1,22 @@
 *, body {
     margin: 0;
-    
+    overflow: none;
+    overscroll-behavior: none;
+}
+
+.header{
+    overflow: none;
+    overscroll-behavior: none;
 }
 
 h1{
     font-family: "Orbitron";
+    color: white
 }
 
 p{
     font-family: "Helvetica";
+    color: white;
 }
 
 #navbar { 
@@ -71,7 +79,7 @@ p{
     display: flex;
     justify-content: left;
     flex-direction: column;
-    background-color: rgba(255, 228, 196, 0.389);
+    background-color: rgba(6, 1, 11, 0.389);
     min-height: 300px;
 
 }
@@ -87,7 +95,7 @@ h1{
 .element{
     align-items: flex-start;
     flex-direction: column;
-    background-color: rgba(196, 217, 255, 0.389);
+    background-color: rgba(6, 1, 11, 0.389);
     min-height: 300px;
 }
 .element2 h1{
